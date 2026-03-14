@@ -13,4 +13,4 @@ The game ends if the bird collides with a pipe or the ground.
 
 
 
-![Game Screenshot](Flappy_Bird.png)
+![Game Screenshot](Capture.png)
