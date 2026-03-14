@@ -6,11 +6,11 @@ The player controls a bird that must fly through pipes without colliding with th
 🎮 Gameplay
 
 Press Space to make the bird jump.
-
 Avoid hitting the pipes.
-
 Avoid touching the ground.
-
 Score increases every time you pass through a pipe.
-
 The game ends if the bird collides with a pipe or the ground.
+
+
+
+![Game Screenshot](Flappy_Bird.png)
