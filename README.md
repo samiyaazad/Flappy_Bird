@@ -1,9 +1,9 @@
-🐦 Flappy Bird (Java)
+# Flappy Bird (Java)
 
 A simple Flappy Bird clone built using Java Swing and AWT.
 The player controls a bird that must fly through pipes without colliding with them. The game tests timing, focus, and quick reactions.
 
-🎮 Gameplay
+# Gameplay
 
 Press Space to make the bird jump.
 Avoid hitting the pipes.
