@@ -47,13 +47,18 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener  {
         Image img;
         boolean passed = false;
 
-        public Pipe(Image topPipeImg) {
-        
-        }
-
-        void pipe(Image img) {
-            this.img = img;
-        }
+        class Pipe {
+                int x = pipeX;
+                int y = pipeY;
+                int width = pipeWidth;
+                int height = pipeHeight;
+                Image img;
+                boolean passed = false;
+            
+                Pipe(Image img) {
+                    this.img = img;
+                }
+}
     }
 
     Bird bird; // game logic
@@ -139,7 +144,7 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener  {
             g.drawString("Game Over: " + String.valueOf((int) score), 10, 35);
         }
         else {
-            g.drawString(String.valueOf((int) score), 10, 3);
+            g.drawString(String.valueOf((int) score), 10, 35);
         }
 
     }
@@ -209,4 +214,15 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener  {
     @Override
     public void keyReleased(KeyEvent e) {}
     
+}
+
+public static void main(String[] args) {
+    JFrame frame = new JFrame("Flappy Bird");
+    FlappyBird game = new FlappyBird();
+
+    frame.add(game);
+    frame.pack();
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setResizable(false);
+    frame.setVisible(true);
 }
